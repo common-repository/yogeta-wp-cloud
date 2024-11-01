@@ -1,0 +1,23 @@
+@import "../assets/css/bootstrap/bootstrap.min.css";
+
+@font-face {
+    font-family: Saira, sans-serif;
+    src: url("../assets/fonts/Saira-Regular.ttf") format("ttf");
+}
+
+.site-title {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.yogeta-header {
+    font-weight: 600;
+}
+
+.wp-menu-name {
+    height: auto !important;
+}
+
+.ycwp_wrapper {
+    font-family: Saira, sans-serif;
+}

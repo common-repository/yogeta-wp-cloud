@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css?family=Saira&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.inner-container {
+    /*background-color: #F6F6F6;*/
+    width: 100%;
+    height: 100%;
+}
+
+.header-section {
+    height: 500px;
+    gap: 165px;
+    margin-bottom: 50px;
+    background: url(../assets/images/header-background.svg) no-repeat bottom right;
+}
+
+.header-left {
+    padding-left: 100px;
+}
+
+.header-right {
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 331px;
+    height: 89px;
+    background: url(../assets/images/logo.svg) no-repeat;
+}
+
+.subheader {
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 56px;
+    font-family: Saira, sans-serif;
+}
+
+.text-container {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .header-section {
+        gap: 60px;
+        height: 250px;
+    }
+
+    .header-left img {
+        width: 208px;
+    }
+
+    .logo {
+        width: 170px;
+        height: 46px;
+        background-size: 170px;
+    }
+
+    .subheader {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+.login-wrapper {
+    width: 600px;
+    padding:5px;
+    background-color: #fff;
+    /*box-shadow: 0px 0px 5px -2px black;*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+}
+
+.login-wrapper h1 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    color: #00110C;
+    margin-bottom: 46px;
+}
+
+.login-wrapper label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #495551;
+    margin-bottom: 6px;
+}
+
+.login-wrapper input {
+    border-color: #AAAFAD;
+    height: 42px;
+}
+
+.login-wrapper .ymg_button_wrapper {
+    margin-top: 40px;
+    text-align: right;
+}
+
+.login-wrapper .ymg_button_wrapper button {
+    background-color: #0091EA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    min-width: 130px;
+    height: 42px;
+}
+
+.login-wrapper ._yogeta_error {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #A30000;
+}
+
+.login-wrapper .key-form {
+    height: 152px;
+    border-color: #AAAFAD;
+}
+
+.login-wrapper .where-can-i {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #0091EA;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.progress-wrapper {
+    padding: 106px 92px 0 92px;
+}
+
+.progress-wrapper .progress-inner-wrapper {
+    background: #fff;
+    box-shadow: 0px 10px 20px rgba(18, 38, 63, 0.0313726);
+    border-radius: 4px;
+    padding: 52px 0 47px 196px;
+}
+
+.progress-wrapper .progress-inner-wrapper h1 {
+    font-family: Saira;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 72px;
+    margin-bottom: 20px;
+    color: #243530;
+}
+
+.progress-wrapper .progress-inner-wrapper h2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #243530;
+    font-family: Saira;
+}
+
+.progress-wrapper .progress-inner-wrapper.done h2 {
+    max-width: 400px;
+}
+
+.progress-wrapper .progress-inner-wrapper h2 a {
+    color: #01B880;
+}
+
+.progress-wrapper .progress-inner-wrapper .progress-bar-wrapper {
+    margin-top: 109px;
+}
+
+.progress-wrapper .progress-inner-wrapper .progress-bar-wrapper span {
+    font-family: Saira;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #243530;
+}
+
+.progress-wrapper .progress-inner-wrapper .progress-bar-wrapper .progress {
+    height: 41px;
+    border-radius: 20px;
+    margin-top: 18px;
+    margin-bottom: 20px;
+}
+
+.progress-wrapper .progress-inner-wrapper .progress-bar-wrapper .progress .progress-bar {
+    background: linear-gradient(90deg, #05d595 0%, #06ffb3 100%);
+    border-radius: 20px;
+}
+
+
+.ymg_button {
+    background: none;
+    border: 1px solid #01F3A9;
+    text-align: center;
+    border-radius: 4px;
+    transition: all ease-out 300ms;
+    display: inline-block;
+    color: #00110C;
+    background: #01F3A9;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    min-width: 360px;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.ymg_button:hover {
+    opacity: .9;
+}
+
+.name-servers-container {
+    font-family: Saira;
+    margin-top: 20px;
+}
+
+.name-servers-container > div {
+    margin-bottom: 10px;
+}
+
+.name-servers-container > div em {
+    font-weight: 500;
+}
+
+
+/* Checkbox-styling */
+.checkbox-container {
+    position: relative;
+    margin-right: 30px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: Saira;
+    font-size: 14px;
+    padding-left: 30px;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    height: 23px;
+    width: 23px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 2px solid #495551;
+    margin-top: -3px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #01b880;
+    border: 2px solid #01b880;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 7px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.girl-image-container {
+    text-align: center;
+}
+
+.login-wrapper-level-2 {
+    box-shadow: none !important;
+}
+
+#migrate_loading {
+    display: none;
+}
+
+
+@keyframes ldio-k0uldxknes-1 {
+    0% {
+        top: 13.700000000000001px;
+        height: 109.60000000000001px
+    }
+    50% {
+        top: 41.1px;
+        height: 54.800000000000004px
+    }
+    100% {
+        top: 41.1px;
+        height: 54.800000000000004px
+    }
+}
+
+@keyframes ldio-k0uldxknes-2 {
+    0% {
+        top: 20.55px;
+        height: 95.9px
+    }
+    50% {
+        top: 41.1px;
+        height: 54.800000000000004px
+    }
+    100% {
+        top: 41.1px;
+        height: 54.800000000000004px
+    }
+}
+
+@keyframes ldio-k0uldxknes-3 {
+    0% {
+        top: 27.400000000000002px;
+        height: 82.2px
+    }
+    50% {
+        top: 41.1px;
+        height: 54.800000000000004px
+    }
+    100% {
+        top: 41.1px;
+        height: 54.800000000000004px
+    }
+}
+
+.ldio-k0uldxknes div {
+    position: absolute;
+    width: 12.330000000000002px
+}
+
+.ldio-k0uldxknes div:nth-child(1) {
+    left: 28.085px;
+    background: #01f3a9;
+    animation: ldio-k0uldxknes-1 1.1363636363636365s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    animation-delay: -0.2272727272727273s
+}
+
+.ldio-k0uldxknes div:nth-child(2) {
+    left: 62.33500000000001px;
+    background: #50eebe;
+    animation: ldio-k0uldxknes-2 1.1363636363636365s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    animation-delay: -0.11363636363636365s
+}
+
+.ldio-k0uldxknes div:nth-child(3) {
+    left: 96.58500000000001px;
+    background: #90f7d7;
+    animation: ldio-k0uldxknes-3 1.1363636363636365s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    animation-delay: undefineds
+}
+
+.loadingio-spinner-pulse-iv0trsbt1mk {
+    width: 137px;
+    height: 137px;
+    display: inline-block;
+    overflow: hidden;
+    background: none;
+}
+
+.ldio-k0uldxknes {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0; /* see note above */
+}
+
+.ldio-k0uldxknes div {
+    box-sizing: content-box;
+}
+
+
+#valid-token {
+    color: #67961e;
+}
+
+#invalid-token {
+    color: red;
+    font-weight: bold;
+}
